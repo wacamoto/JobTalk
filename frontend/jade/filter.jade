@@ -1,3 +1,15 @@
 extends ./layout/layout
 block append content
-  p filter
+  .filter
+    h3 工作型態
+    select.js-jobs-select
+    h3 性別
+    select.js-gender-select
+      option(value="F") 男
+      option(value="M") 女
+    h3 年紀區間
+    input.js-age-low(type="number", name="age")
+    | ~
+    input.js-age-up(type="number", name="age")
+    button.js-search-btn 搜尋
+    .js-user-list
