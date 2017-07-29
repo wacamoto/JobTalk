@@ -1,0 +1,108 @@
+.card {
+  background-color: #dc7a25;
+  box-shadow: 10px 10px 5px #888888; }
+
+.btn {
+  height: 40px;
+  border-radius: 20px;
+  color: #fefefe;
+  background-color: #e4a059;
+  border-width: 0px;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  box-shadow: 0 -5px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+body {
+  background-color: #fefefe;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #fefefe;
+  text-decoration: none; }
+
+.nav {
+  height: 50px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #fefefe;
+  background-color: #dc7a25;
+  box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .nav span {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.3em;
+    font-weight: bold; }
+
+.footer {
+  height: 50px;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #e4a059;
+  box-shadow: 0 -5px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex; }
+  .footer a {
+    min-width: 80px;
+    padding: 10px; }
+    .footer a i, .footer a span {
+      color: #fefefe;
+      display: block;
+      text-align: center; }
+    .footer a i {
+      font-size: 1.25em; }
+    .footer a span {
+      font-size: 0.8em; }
+
+.index {
+  width: 100vw;
+  padding-top: 50px;
+  background-color: #fefefe;
+  min-height: 100vh; }
+  .index .content {
+    padding-top: 150px;
+    text-align: center; }
+    .index .content p {
+      font-size: 1.3em;
+      color: #6c6c6c;
+      text-align: center;
+      margin: 30px auto; }
+    .index .content button {
+      display: block;
+      margin: 15px auto; }
+
+.login {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0; }
+  .login .content {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #fefefe; }
+    .login .content-form h1 {
+      font-size: 2em;
+      color: #fefefe; }
+    .login .content-form h2 {
+      font-size: 1.2em;
+      color: #fefefe; }
+    .login .content-form input {
+      background-color: black;
+      border-bottom: #dc7a25;
+      display: block; }
+    .login .content-form button {
+      color: #ccc;
+      display: block;
+      background-color: #fefefe; }

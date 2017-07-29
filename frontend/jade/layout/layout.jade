@@ -5,6 +5,27 @@ head
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Document
+    link(rel="stylesheet", href="./index.css")
+    //- link(re="srylesheet", href="../lib/font-awesome.min.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css")
+    script(src="../lib/vue.min.js")
+    script(src="../lib/jquery-3.2.1.min.js")
+    script(src="./index.js")
 body
-    h1 layout
+    nav.nav
+        a(href="./index.html")
+            span Job Talk
     block content
+    footer.footer
+        a(href="./index.html")
+            i.fa.fa-users
+            span 找朋友
+        a(href="./index.html")
+            i.fa.fa-newspaper-o
+            span 社群快訊
+        a(href="./index.html")
+            i.fa.fa-list
+            span 通訊錄
+        a(href="./index.html")
+            i.fa.fa-user
+            span 我

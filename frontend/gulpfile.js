@@ -7,7 +7,7 @@ var gutil = require('gulp-util');
 var minify = require('gulp-minify');
 
 gulp.task('scripts', function() {
-    gulp.src('js/*.js')
+    gulp.src('js/index.js')
         .pipe(browserify())
         .on('error', gutil.log)
         .pipe(minify())
@@ -15,7 +15,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('scss', function() {
-  gulp.src('./scss/*.scss')
+  gulp.src('./scss/index.scss')
     .pipe(sass())
     .on('error', gutil.log)
     .pipe(gulp.dest('dist/'));
@@ -38,7 +38,7 @@ gulp.task('webserver', function() {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(['jade/*.jade'],['templates']);
+  gulp.watch(['jade/*.jade','jade/layout/*.jade'],['templates']);
   gulp.watch('js/*.js',['scripts']);
   gulp.watch('scss/*.scss',['scss']);
 });

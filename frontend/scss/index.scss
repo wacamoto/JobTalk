@@ -1,0 +1,128 @@
+@import "variables";
+@import "cards";
+@import "button";
+
+body {
+  background-color: $color-2;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $color-2;
+  text-decoration: none;
+}
+
+// =============== Navbar ====================//
+.nav {
+  height: 50px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: $color-2;
+  background-color: $color-1;
+  box-shadow: 0 5px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+  span {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+}
+
+// =============== footer ====================//
+.footer {
+  height: 50px;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: $color-4;
+  box-shadow: 0 -5px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+  display: flex;
+  a {
+    min-width: 80px;
+    padding: 10px;
+    i, span {
+      color: $color-2;
+      display: block;
+      text-align: center;
+    }
+    i {
+      font-size: 1.25em;
+    }
+    span {
+      font-size: 0.8em;
+    }
+  }
+}
+
+// =============== 首頁 ================== //
+.index {
+  width: 100vw;
+  padding-top: 50px;
+  background-color: $color-2;
+  min-height: 100vh;
+  .content {
+    padding-top: 150px;
+    text-align: center;
+    p {
+      font-size: 1.3em;
+      color: $color-3;
+      text-align: center;
+      margin: 30px auto;
+    }
+    button {
+      display: block;
+      margin: 15px auto;
+    }
+  }
+}
+
+
+// =============== 登入頁面 ================== //
+.login {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  .content {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: $color-2;
+    &-form {
+      h1 {
+        font-size: 2em;
+        color: $color-2;
+      }
+      h2 {
+        font-size: 1.2em;
+        color: $color-2;
+      }
+      input {
+        background-color: rgba(0, 0, 0, 1);
+        border-bottom: $color-1;
+        display: block;
+      }
+      .links img {
+        
+      }
+      button {
+        color: #ccc;
+        display: block;
+        background-color: $color-2;
+      }
+    }
+  }
+}
